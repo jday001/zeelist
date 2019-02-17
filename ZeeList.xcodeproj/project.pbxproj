@@ -12,6 +12,13 @@
 		651A166721FE9BA400C46727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651A166521FE9BA400C46727 /* Main.storyboard */; };
 		651A166921FE9BA500C46727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651A166821FE9BA500C46727 /* Assets.xcassets */; };
 		651A166C21FE9BA500C46727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 651A166A21FE9BA500C46727 /* LaunchScreen.storyboard */; };
+		651A167621FEAC9100C46727 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A167521FEAC9100C46727 /* MainTableViewController.swift */; };
+		651A16792219027300C46727 /* AddPersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A16782219027300C46727 /* AddPersonCollectionViewCell.swift */; };
+		651A167B2219029300C46727 /* PersonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A167A2219029200C46727 /* PersonCollectionViewCell.swift */; };
+		651A167E221902B500C46727 /* HorizontalListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A167D221902B500C46727 /* HorizontalListRow.swift */; };
+		651A1681221902CE00C46727 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A1680221902CE00C46727 /* Person.swift */; };
+		651A16832219033200C46727 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A16822219033200C46727 /* ItemTableViewCell.swift */; };
+		651A1685221903B200C46727 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A1684221903B200C46727 /* ListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		651A166821FE9BA500C46727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		651A166B21FE9BA500C46727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		651A166D21FE9BA500C46727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651A167521FEAC9100C46727 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		651A16782219027300C46727 /* AddPersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		651A167A2219029200C46727 /* PersonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCollectionViewCell.swift; sourceTree = "<group>"; };
+		651A167D221902B500C46727 /* HorizontalListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListRow.swift; sourceTree = "<group>"; };
+		651A1680221902CE00C46727 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		651A16822219033200C46727 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		651A1684221903B200C46727 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,61 @@
 		651A166021FE9BA400C46727 /* ZeeList */ = {
 			isa = PBXGroup;
 			children = (
+				651A167F221902C700C46727 /* model */,
+				651A167421FE9C8C00C46727 /* view */,
+				651A167321FE9C8500C46727 /* controller */,
 				651A166121FE9BA400C46727 /* AppDelegate.swift */,
 				651A166321FE9BA400C46727 /* ViewController.swift */,
-				651A166521FE9BA400C46727 /* Main.storyboard */,
 				651A166821FE9BA500C46727 /* Assets.xcassets */,
 				651A166A21FE9BA500C46727 /* LaunchScreen.storyboard */,
 				651A166D21FE9BA500C46727 /* Info.plist */,
 			);
 			path = ZeeList;
+			sourceTree = "<group>";
+		};
+		651A167321FE9C8500C46727 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				651A167521FEAC9100C46727 /* MainTableViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		651A167421FE9C8C00C46727 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				651A167C221902A800C46727 /* tableViewCells */,
+				651A16772219025800C46727 /* collectionViewCells */,
+				651A166521FE9BA400C46727 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		651A16772219025800C46727 /* collectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				651A16782219027300C46727 /* AddPersonCollectionViewCell.swift */,
+				651A167A2219029200C46727 /* PersonCollectionViewCell.swift */,
+			);
+			path = collectionViewCells;
+			sourceTree = "<group>";
+		};
+		651A167C221902A800C46727 /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				651A167D221902B500C46727 /* HorizontalListRow.swift */,
+				651A16822219033200C46727 /* ItemTableViewCell.swift */,
+			);
+			path = tableViewCells;
+			sourceTree = "<group>";
+		};
+		651A167F221902C700C46727 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				651A1680221902CE00C46727 /* Person.swift */,
+				651A1684221903B200C46727 /* ListItem.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				651A166421FE9BA400C46727 /* ViewController.swift in Sources */,
+				651A16792219027300C46727 /* AddPersonCollectionViewCell.swift in Sources */,
+				651A167621FEAC9100C46727 /* MainTableViewController.swift in Sources */,
+				651A1685221903B200C46727 /* ListItem.swift in Sources */,
 				651A166221FE9BA400C46727 /* AppDelegate.swift in Sources */,
+				651A16832219033200C46727 /* ItemTableViewCell.swift in Sources */,
+				651A1681221902CE00C46727 /* Person.swift in Sources */,
+				651A167E221902B500C46727 /* HorizontalListRow.swift in Sources */,
+				651A167B2219029300C46727 /* PersonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
